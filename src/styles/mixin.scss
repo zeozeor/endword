@@ -1,0 +1,57 @@
+/*** mixin : 자주쓰는 코드 등록 ***/
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-layout($direction:row, $justify:center, $align:center){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin round-button($bg:#eee,$color:#222){
+  width: 100%;
+  padding: 0.7rem;
+  background-color: $bg;
+  color: $color;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  &:hover{
+    box-shadow: inset 0 0 5px #666;
+    // filter: brightness(0.2);
+  }
+}
+
+@mixin over-btn($bg:#eee,$color:#222){
+  width: 100%;
+  padding: 0.7rem;
+  background-color: $bg;
+  color: $color;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  &:hover{
+    background-color: #1f49b5;
+    color: #eee;
+    box-shadow: 0px 0px 0px 2px #eee;
+  }
+}
+
+@mixin text-btn($bg:#eee,$color:#222){
+  width: 100%;
+  padding: 0.7rem;
+  background-color: $bg;
+  color: $color;
+  font-weight: bolder;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 2px #222;
+}
