@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import {dictionaty} from "../api/dictionaty.js";
-import imoge from "../assets/game-2.png";
 
 const GameScreen = ({startWord}) => {
   const bottomRef = useRef(null);
