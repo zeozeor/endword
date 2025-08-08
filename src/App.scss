@@ -35,10 +35,13 @@ body{
 .start-screen{
   height: 100%;
   text-align: center;
-  @include flex-layout(column,space-around);
-  gap: 3rem;
+  margin-top: 70px;
+  @include flex-layout(column,flex-start);
   h1{
     font-size: 2rem;
+  }
+  .logo{
+    margin: 20px 0;
   }
   .input-form{
     @include flex-layout(column);

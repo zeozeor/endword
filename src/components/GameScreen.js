@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import {dictionaty} from "../api/dictionaty.js";
+import imoge from "../assets/game-2.png";
 
 const GameScreen = ({startWord}) => {
   const bottomRef = useRef(null);
@@ -56,7 +57,7 @@ const GameScreen = ({startWord}) => {
       <ul className="word-list">
         {
           words.map((item,idx)=>{
-            return <li key={idx}><span>◐</span><span>{item}</span></li>
+            return <li key={idx}><span>🔘</span><span>{item}</span></li>
           })
         }
         <li ref={bottomRef}></li>
